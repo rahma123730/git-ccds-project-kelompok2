@@ -1,57 +1,50 @@
-KELOMPOK2
-==============================
+# 🚀 Team 2 - Git Collaboration & CCDS Project
 
-Peoject
+[![Standard: CCDS](https://img.shields.io/badge/standard-CCDS-orange?style=flat-square)](https://cookiecutter-data-science.drivendata.org/)
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-Project Organization
-------------
+Selamat datang di repository **Team 2 - Kelas 24IC1**. Proyek ini merupakan implementasi kolaborasi tim menggunakan alur kerja Git yang ketat dan standarisasi struktur proyek berbasis **Cookiecutter Data Science (CCDS)**.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+---
+
+## 👥 Profil Anggota Tim
+Kami adalah tim multidisiplin yang berdedikasi untuk menciptakan workflow data science yang bersih dan terukur.
+
+| Foto | NIM | Nama | Peran |
+| :---: | :---: | :--- | :--- |
+| 👨‍💼 | **20124033** | Rahma Aulia Dini | **Product Manager** |
+| 🎨 | **20124028** | Muhammad Faqih Dienul Haq | **UI/UX Designer** |
+| 🧪 | **20124021** | Lailani Alifah | **Data Scientist** |
+| 💻 | **20124009** | Widya Novianti | **Software Engineer** |
+| 🖌️ | **20124025** | Muhafidz Ikram Ramadhan | **UI/UX Designer** |
+
+---
+
+## 🛠️ Alur Kerja Proyek (Workflow)
+Untuk menjaga integritas kode di cabang utama (`main`), kami menerapkan aturan berikut:
+
+1. **Branching Strategy**: Setiap fitur dikembangkan di branch terpisah (`feat/`, `fix/`, `docs/`).
+2. **Commit Standard**: Wajib menggunakan **Gitmoji** (Contoh: `✨ :sparkles: add preprocessing script`).
+3. **Collaboration**: Penggabungan kode hanya dilakukan melalui **Pull Request (PR)** setelah melalui proses review oleh Product Manager.
+
+```mermaid
+graph LR
+    A[main] -- checkout --> B(feature branch)
+    B -- commits with gitmoji --> B
+    B -- pull request --> C{Review PM}
+    C -- approved --> A
+
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+│   ├── external       # Data dari sumber pihak ketiga.
+│   ├── interim        # Data yang telah diubah sebagian.
+│   ├── processed      # Dataset final untuk pemodelan.
+│   └── raw            # Dataset asli yang tidak boleh diubah (immutable).
+├── models             # Model yang telah dilatih (pickle/joblib).
+├── notebooks          # Jupyter notebooks untuk EDA dan eksperimen.
+├── references         # Kamus data, manual, dan aset visual.
+├── reports            # Analisis yang dihasilkan (HTML, PDF, dsb).
+│   └── figures        # Grafik dan visualisasi untuk laporan.
+├── src                # Source code Python untuk digunakan di proyek ini.
+└── README.md          # Dokumentasi utama proyek.
 
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
