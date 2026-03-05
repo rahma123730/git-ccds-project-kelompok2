@@ -28,7 +28,6 @@ Untuk menjaga integritas kode di cabang utama (`main`), kami menerapkan aturan b
 2. **Commit Standard**: Wajib menggunakan **Gitmoji** (Contoh: `✨ :sparkles: add preprocessing script`).
 3. **Collaboration**: Penggabungan kode hanya dilakukan melalui **Pull Request (PR)** setelah melalui proses review oleh Product Manager.
 
-```mermaid
 graph LR
     A[main] -- checkout --> B(feature branch)
     B -- commits with gitmoji --> B
@@ -47,4 +46,5 @@ graph LR
 │   └── figures        # Grafik dan visualisasi untuk laporan.
 ├── src                # Source code Python untuk digunakan di proyek ini.
 └── README.md          # Dokumentasi utama proyek.
+
 
